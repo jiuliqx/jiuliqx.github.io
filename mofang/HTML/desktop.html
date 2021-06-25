@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Flie/jqueryRightMenu/assets/style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../CSS/desktop.css">
+    <title>Desktop</title>
+</head>
+<body>
+    <div class="all">
+        <div class="all-main"><!--整个系统屏幕-->
+            <div class="backgroud"><!--壁纸-->
+                <img src="../PS/backgroud/7.jpg" alt="none" class="backgroud">
+            </div>
+            <div class="taskbar"><!--任务栏-->
+                <img src="../PS/taskbar.png" alt="none" class="taskbar">
+                <div class="app">
+                    <div class="app-1">
+                        <a href="desktop1.html"><img src="../PS/icon/win.png" alt="none" class="windows"></a>
+                    </div>
+                    <div class="app-3">
+                        <a href=""><img src="../PS/icon/vscode.png" alt="none" class="vscode"></a>
+                    </div>
+                    <div class="app-4">
+                        <a href=""><img src="../PS/icon/Pr.png" alt="none" class="pr"></a>
+                    </div>
+                    <div class="app-5">
+                        <a href=""><img src="../PS/icon/Ps.png" alt="none" class="ps"></a>
+                    </div>
+                    <div class="app-6">
+                        <a href=""><img src="../PS/icon/Ae.png" alt="none" class="ae"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="APP"><!--应用程序-->
+                <div class="APP-all">
+                    <div class="APP-1">
+                        <a href="computer.html"><img src="../PS/icon/app/computer.png" alt="none" class="computer"></a>
+                        <div class="app-text">
+                            <p>此电脑</p>
+                        </div>
+                    </div>
+                    <div class="APP-1">
+                        <a href="rubbish.html"><img src="../PS/icon/app/russhi.png" alt="none" class="del"></a>
+                        <div class="app-text">
+                            <p>回收站</p>
+                        </div>
+                    </div>
+                    <div class="APP-1">
+                        <a href="cloude.html"><img src="../PS/icon/app/cloude.png" alt="none" class="cloude"></a>
+                        <div class="app-text">
+                            <p>云盘</p>
+                        </div>
+                    </div>
+                    <div class="APP-1">
+                        <a href="photo.html"><img src="../PS/icon/app/photo.png" alt="none" class="photo"></a>
+                        <div class="app-text">
+                            <p>图片</p>
+                        </div>
+                    </div>
+                    <div class="APP-1">
+                        <a href="vedio.html"><img src="../PS/icon/app/video.png" alt="none" class="video"></a>
+                        <div class="app-text">
+                            <p>视频</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+	<script src="../JS/jquery.min.js"></script>
+	<script src="../Flie/jqueryRightMenu/assets/script.js"></script>
+	<script>
+		$(document).ready(function(){
+			var rcm = window.RMenu;
+			rcm.init({
+				area:'body',
+				items:{
+					"edit":{name:"刷新",icon:'refresh',href:'desktop.html'},
+					"del":{name:"重置",icon:'undo'},
+					"add":{name:"查看",icon:'reorder',items:{
+						"new-text":{name:"大图标",icon:'file-text'},
+						"new-zip":{name:"小图标",icon:'file-zip-o'}
+					}},
+					"refresh":{name:"显示设置",icon:'desktop'},
+					"down":{name:"个性化",icon:'heart'},
+					"new":{name:"更换壁纸",icon:'photo',items:{
+						"new-text":{name:"随机壁纸",icon:'file-text'},
+						"new-zip":{name:"全部壁纸",icon:'file-zip-o'}
+					}}
+				},
+				callback:function(res){
+					if(res.data == 'edit'){
+						console.log('点击了edit');
+					}else if(res.data == 'del'){
+						console.log('点击了del');
+					}else if(res.data == 'add'){
+						console.log('点击了add');
+					}else if(res.data == 'refresh'){
+						window.location.reload();
+					}else if(res.data == 'down'){
+						console.log('点击了download');
+					}
+				}
+			})
+		});
+
+		
+	</script>
+<script src="../JS/desktop.js"></script>
+</html>
+

@@ -1,0 +1,281 @@
+* {
+    cursor: default;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.backgroud {
+    z-index: -5;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-user-drag: none;
+}
+
+.taskbar {
+    opacity: 0.75;
+    z-index: 5;
+    position: fixed;
+    height: 30px;
+    bottom: 0;
+    -webkit-user-drag: none;
+}
+
+.windows {
+    margin-top: 3px;
+    margin-left: 5px;
+    height: 24px;
+    width: 24px;
+    z-index: 15;
+}
+
+.taskbar a {
+    cursor: default;
+}
+
+.app-1{
+    width: 36px;
+    height: 30px;
+    z-index: 15;
+    transition: all 0.3s ease 0s;
+}
+
+.app-1:hover {
+    width: 36px;
+    height: 30px;
+    background-color: rgb(224, 224, 224);
+}
+
+.app-2{
+    width: 36px;
+    height: 30px;
+    z-index: 15;
+    transition: all 0.3s ease 0s;
+    animation: movetop1 1s ease-in-out forwards;
+}
+
+.app-2:hover {
+    width: 36px;
+    height: 30px;
+    background-color: rgb(224, 224, 224);
+}
+
+.app-3{
+    width: 36px;
+    height: 30px;
+    z-index: 15;
+    transition: all 0.3s ease 0s;
+    animation: movetop2 1.5s ease-in-out forwards;
+}
+
+.app-3:hover {
+    width: 36px;
+    height: 30px;
+    background-color: rgb(224, 224, 224);
+}
+
+.app-4{
+    width: 36px;
+    height: 30px;
+    z-index: 15;
+    transition: all 0.3s ease 0s;
+    animation: movetop3 2s ease-in-out forwards;
+}
+
+.app-4:hover {
+    width: 36px;
+    height: 30px;
+    background-color: rgb(224, 224, 224);
+}
+
+.app-5{
+    width: 36px;
+    height: 30px;
+    z-index: 15;
+    transition: all 0.3s ease 0s;
+    animation: movetop4 2.5s ease-in-out forwards;
+}
+
+.app-5:hover {
+    width: 36px;
+    height: 30px;
+    background-color: rgb(224, 224, 224);
+}
+
+.app-6{
+    width: 36px;
+    height: 30px;
+    z-index: 15;
+    transition: all 0.3s ease 0s;
+    animation: movetop5 3s ease-in-out forwards;
+}
+
+.app-6:hover {
+    width: 36px;
+    height: 30px;
+    background-color: rgb(224, 224, 224);
+}
+
+.ae {
+    margin-top: 3px;
+    margin-left: 5px;
+    height: 24px;
+    width: 24px;
+    z-index: 15;
+}
+
+.ps {
+    margin-top: 3px;
+    margin-left: 5px;
+    height: 24px;
+    width: 24px;
+    z-index: 15;
+}
+
+.pr {
+    margin-top: 3px;
+    margin-left: 5px;
+    height: 24px;
+    width: 24px;
+    z-index: 15;
+}
+
+.vscode {
+    margin-top: 3px;
+    margin-left: 5px;
+    height: 24px;
+    width: 24px;
+    z-index: 15;
+}
+
+.massion {
+    margin-top: 3px;
+    margin-left: 5px;
+    height: 24px;
+    width: 24px;
+    z-index: 15;
+}
+
+.app {
+    display: grid;
+    justify-items: left;
+    gap: 2px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+@keyframes movetop1 {
+    from {
+        transform: translateY(200px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes movetop2 {
+    from {
+        transform: translateY(200px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes movetop3 {
+    from {
+        transform: translateY(200px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes movetop4 {
+    from {
+        transform: translateY(200px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes movetop5 {
+    from {
+        transform: translateY(200px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes movetop6 {
+    from {
+        transform: translateY(630px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+
+}
+
+.APP {
+    width: 100px;
+}
+
+.APP-all {
+    cursor: default;
+    width: 60px;
+    margin-left: 10px;
+}
+
+.APP-1 {
+    cursor: default;
+    margin-bottom: 30px;
+    display: grid;
+    justify-items: center;
+    transition: all 0.1s ease 0s;
+}
+
+.APP-1:hover {
+    border-radius: 8px;
+    background-color: rgba(153, 153, 153, 0.377);
+}
+
+.APP-1 img {
+    cursor: default;
+    color: black;
+    width: 45px;
+    height: 45px;
+}
+
+.APP-1 a {
+    cursor: default;
+}
+
+.app-text {
+    cursor: default;
+    display: grid;
+    justify-items: center;
+}
+
+.app-text p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.win-top img:hover {
+    background-color: rgb(194, 194, 194);
+}
+

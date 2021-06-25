@@ -1,0 +1,168 @@
+
+.win-computer {
+    z-index: 30;
+    display: grid;
+    justify-items: center;
+}
+
+.windows-first {
+    left: 25%;
+    top: 160px;
+    position: fixed;
+    background-color: rgba(180, 180, 180, 0.733);
+    width: 800px;
+    height: 520px;
+}
+
+.win-top {
+    margin-top: 3px;
+    margin-left: 10px;
+    border-left-style: solid;
+    border-width: 2px;
+    border-color: rgb(190, 190, 190);
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.win-top p {
+    cursor: default;
+    margin-left: 5px;
+    font-size: 19px;
+    font-weight: 600;
+    margin-top: 3px;
+}
+
+.win-top img {
+    top: 3px;
+    right: 5px;
+    position: absolute;
+    width: 21px;
+    height: 21px;
+}
+
+.win-main {
+    border-top-style: solid;
+    border-width: 1px;
+    border-color: rgb(199, 199, 199);
+    margin-top: 5px;
+}
+
+.win-main-top {
+    margin-top: 15px;
+    display: grid;
+    justify-items: center;
+}
+
+.win-main-top p {
+    color: rgb(202, 202, 202);
+    margin-top: 20px;
+}
+
+.win-main-top h2 {
+    cursor: default;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+
+.win-main-top h2::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 2px;
+}
+
+.win-main-save {
+    margin-top: 20px;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.save-1 {
+    width: 230px;
+    cursor: default;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 3fr;
+    transition: all 0.3s ease 0s;
+}
+
+.save-1 a {
+    cursor: default;
+}
+
+.save-1 img {
+    cursor: default;
+    width: 50px;
+    height: 50px;
+}
+
+.save-1:hover {
+    background-color: rgb(212, 212, 212);
+}
+
+.save-1 p {
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.win-main-text {
+    display: grid;
+    justify-items: center;
+}
+
+.main-text {
+    border-top: solid;
+    border-width: 1px;
+    border-color: rgb(190, 190, 190);
+    margin-top: 20px;
+    margin-bottom: 10px;
+    gap: 100px;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.text-left {
+    display: grid;
+    align-items: center;
+}
+
+.text-left h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+.text-left p {
+    color: rgb(56, 56, 56);
+}
+
+.text-left h4,p {
+    cursor: default;
+}
+
+.text-right {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.text-right h1 {
+    cursor: default;
+}
+
+.text-right img {
+    margin-top: 30px;
+    width: 100px;
+    height: 100px;
+}
+
+
+
